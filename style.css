@@ -154,6 +154,31 @@ products section starts
     color: #e02c6d;
     font-weight: 600;
   }
+  /* start */
+  .final-section {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+  }
+  .left-sidee {
+    padding: 70px;
+    position: relative;
+  }
+  .left-sidee img {
+    position: absolute;
+width: 404px;
+height: 270px;
+left: 165px;
+top: 100px;
+}
+.right-sidee{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  /* section endd */
   /* ------------------
   login section
   ------------------  */
@@ -245,3 +270,71 @@ products section starts
   /*---------------------
    footer section end
    ---------------------- */
+   @media (max-width: 900px) {
+    .hero-section {
+      display: grid;
+      justify-content: space-between;
+      grid-template-columns: 1fr;
+    }
+    .left-side {
+      padding-left: 20px;
+      margin: 0 auto;
+      order: 2;
+      align-items: center;
+    }
+    .banner {
+      margin-top: 360px;
+    }
+    .see-more {
+      justify-content: center;
+    }
+    .card-container {
+      grid-template-columns: 1fr 1fr;
+      margin: 0 20px;
+    }
+    .right-side {
+      margin: 20px auto;
+    }
+    .nav-items li img {
+      display: none;
+    }
+    .navbar label {
+      display: block;
+    }
+    .navbar {
+      flex-direction: column;
+    }
+    .nav-items {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+    .nav-items li {
+      padding: 10px 0;
+    }
+    #toggle:checked ~ .nav-items {
+      display: block;
+    }
+  }
+  @media (max-width: 500px) {
+    .card-container {
+      grid-template-columns: 1fr;
+    }
+    .banner {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 10px 30px;
+      margin-top: 200px;
+    }
+    .form-input {
+      width: 200px;
+    }
+    .form-input:focus {
+      width: 280px;
+    }
+    .left-side h1 {
+      text-align: center;
+      font-size: 30px;
+    }
+  }
